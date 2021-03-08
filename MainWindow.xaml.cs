@@ -20,6 +20,7 @@ namespace ShoppingList
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<int>
         public MainWindow()
         {
             InitializeComponent();
