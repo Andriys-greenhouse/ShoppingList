@@ -20,7 +20,7 @@ namespace ShoppingList
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<int>
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -28,6 +28,11 @@ namespace ShoppingList
 
         private void AddItem_Click(object sender, RoutedEventArgs e)
         {
+            RowDefinition row = new RowDefinition();
+            row.Name = $"row{myGrid.RowDefinitions.Count - 5}";
+            myGrid.RowDefinitions.Insert(myGrid.RowDefinitions.Count - 3, row);
+            //přidat definici složek nového řádku
+            //musím nějak permanentně přiřadit AddItem k AddButtonRow
 
         }
     }

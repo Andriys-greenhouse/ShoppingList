@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ShoppingList"
         mc:Ignorable="d" FontSize="18"
         Title="Shopping List" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="myGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="auto"/>
@@ -20,8 +20,8 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
+            <RowDefinition x:Name="row0" Height="auto"/>
+            <RowDefinition x:Name="AddButtonRow" Height="auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
